@@ -1,0 +1,204 @@
+
+:root {
+    --mainBg: #0A192F;
+    --cyan: #64FFDA;
+    --name: #CCD6F6;
+    --role: #8892B0;
+    --nav: #A8B2D1;
+    --resume: #E5E7EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../assets/Fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Mono;
+    src: url('../assets/Fonts/SFMonoRegular.otf');
+}
+
+body {
+    background-color: var(--mainBg);
+    color: white;
+    font-size: 16px;
+    font-family: Poppin, sans-serif;
+}
+
+.cyanic {
+    color: var(--cyan);
+}
+
+header {
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.close, nav {
+    display: none;
+}
+
+.logo {
+    font-weight: 900;
+    color: var(--cyan);
+    padding: .5em;
+    border-radius: 2em;
+    border: 2px solid var(--cyan);
+    position: relative;
+    z-index: 3;
+}
+
+.hamburger img {
+    width: 50px;
+    filter: brightness(0) saturate(100%) invert(78%) sepia(59%) saturate(354%) hue-rotate(105deg) brightness(100%) contrast(109%);
+}
+.ham, .close, nav {
+    transition: .4s all ease-in-out;
+}
+main {
+    padding: .5em 3em;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+    margin-bottom: 1.5em;
+}
+
+.hi {
+    font-family: Mono, monospace;
+}
+.name {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: var(--name);
+}
+.profession {
+    font-size: 1.9em;
+    font-weight: 700;
+    color: var(--role);
+}
+
+p.description {
+    line-height: 1.5em;
+    letter-spacing: .05em;
+    color: var(--role);
+    margin-bottom: 3em;
+    font-family: Mono, monospace;
+}
+main > .button {
+    width: 70%;
+}
+
+footer {
+    font-family: Mono, monospace;
+    text-align: center;
+    padding: 1em;
+    color: var(--role);
+    margin: 30% 0 5%;
+}
+
+/* Hamburger active state */
+.ham.active {
+    display: none;
+}
+.close.active {
+    display: block;
+}
+@keyframes rotPos {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(180deg);
+    }
+}
+@keyframes rotNeg {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(-90deg);
+    }
+}
+nav.active {
+    display: block;
+    position: fixed;
+    background-color: rgba(0,0,0, .2);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(4px);
+}
+@keyframes slide-in {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 70%;
+        opacity: 1;
+    }
+}
+nav ul {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    text-align: right;
+    padding: 100px 32px;
+    background-color: var(--mainBg);
+}
+nav li{
+    text-transform: uppercase;
+    font-family: Mono, monospace;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav_img {
+    filter: brightness(0) saturate(100%) invert(78%) sepia(59%) saturate(354%) hue-rotate(105deg) brightness(100%) contrast(109%);
+    margin-bottom: 1em;
+}
+.button {
+    width: 100%;
+    background: none;
+    text-transform: uppercase;
+    border: 1px solid var(--cyan);
+    padding: 1em;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+nav .button {
+    text-align: center;
+    width: 70%;
+}
+
+/* Hover */
+.logo:hover,
+.button:hover {
+    cursor: pointer;
+    opacity: .8;
+    box-shadow: 1px 1px 10px var(--cyan),
+                -1px -1px 10px var(--cyan);
+    border: 1px solid transparent;
+}
+.ham:hover,
+.close:hover {
+    cursor: pointer;
+    opacity: .8;
+}
