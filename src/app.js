@@ -14,3 +14,27 @@ function openHamburger() {
     nav.classList.toggle('active')
     menuList.style.animation = 'slide-in .4s forwards'
 }
+
+
+
+// Make header fixed on scroll
+const header = document.querySelector('header')
+const introSection = document.querySelector('.intro_section')
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset >= 50) {
+        header.classList.add('active')
+        introSection.classList.add('active')
+    } else {
+        header.classList.remove('active')
+        introSection.classList.remove('active')
+    }
+})
+
+// remove the side nav on click of an anchor tag
+const navLinks = document.querySelectorAll('nav ul a')
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active')
+    })
+})

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,22 @@
     <link rel="stylesheet" href="./src/style.css">
     <script defer src="./src/app.js"></script>
 </head>
+
 <body>
-    
+
     <div class="container">
 
-        <header>
+        <header class="">
             <div class="logo">pP</div>
             <nav class="">
                 <ul>
-                    <li> <img src="./assets/Images/code-box-line.svg" alt="" class="nav_img"> about</li>
+                    <a href="#about">
+                        <li> <img src="./assets/Images/code-box-line.svg" alt="" class="nav_img"> about</li>
+                    </a>
                     <li> <img src="./assets/Images/profile-line.svg" alt="" class="nav_img"> projects</li>
                     <li> <img src="./assets/Images/contacts-book-2-line.svg" alt="" class="nav_img">
-                    <nav_img></nav_img> contact</li>
+                        <nav_img></nav_img> contact
+                    </li>
                     <div class="button cyanic">resume</div>
                 </ul>
             </nav>
@@ -31,24 +36,85 @@
 
         <main>
 
-            <div class="intro">
-                <span class="hi cyanic">Hi, my name is</span>
-                <span class="name">Ibidunmoye Victor.</span>
-                <span class="profession">I build things for the web.</span>
-            </div>
+            <section class="intro_section">
+                <div class="intro">
+                    <span class="hi cyanic">Hi, my name is</span>
+                    <span class="name">Ibidunmoye Victor.</span>
+                    <span class="profession">I build things for the web.</span>
+                </div>
 
-            <p class="description">
-                I'm a front end web developer, specialized in building responsive, scalable and user-friendly web applications.
-                I literally breathe life into static images and web pages to transform them into dynamic websites that users can interact with.
-            </p>
+                <p class="description">
+                    I'm a front end web developer, specialized in building responsive, scalable and user-friendly web
+                    applications.
+                    I literally breathe life into static images and web pages to transform them into dynamic websites
+                    that users can interact with.
+                </p>
 
-            <button class="button cyanic">projects</button>
+                <button class="button cyanic">projects</button>
+            </section>
 
-            <div class="social_links">
+            <section class="about_section" id="about">
+                <div class="section_heading">
+                    <img src="./assets/Images/code-box-line.svg" alt="" class="section_nav_img">
+                    <h2 class="section_heading_title">About Me
+                    </h2>
+                    <div class="section_line"></div>
+                </div>
+                <div class="section_description">
+                    <p class="section_description_text">
+                        Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in
+                        web development started
+                        back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a
+                        custom reblog button
+                        taught me a lot about <span class="cyanic">HTML & CSS!</span>
+                        <br> <br>
+                        Fast-forward to today, and I’ve had the privilege of working at an <span
+                            class="cyanic">advertising agency, a start-up, a huge corporation,
+                            and a student-led design studio.</span> My main focus these days is building accessible,
+                        inclusive products and digital
+                        experiences at Upstatement for a variety of clients.
+                        <br> <br>
+                        I also recently launched a course that covers everything you need to build a web app with the
+                        Spotify API using Node &
+                        React.
 
-            </div>
+                        Here are a few technologies I’ve been working with recently:
+                    </p>
+                    <ul class="tech_stack">
+                        <li class="tech_stack_list"> <img src="./assets/Images/bookmark-3-line.svg" alt=""
+                                class="tech_stack_list_style"> Javascript (ES6+)</li>
+                        <li class="tech_stack_list"> <img src="./assets/Images/bookmark-3-line.svg" alt=""
+                                class="tech_stack_list_style"> React</li>
+                        <li class="tech_stack_list"> <img src="./assets/Images/bookmark-3-line.svg" alt=""
+                                class="tech_stack_list_style"> HTML</li>
+                        <li class="tech_stack_list"> <img src="./assets/Images/bookmark-3-line.svg" alt=""
+                                class="tech_stack_list_style"> CSS</li>
+                    </ul>
+                </div>
+            </section>
+
+
 
         </main>
+
+        <div class="social_icons">
+            <a href="#">
+                <img src="./assets/Images/github-line.svg" alt="" class="social_icon">
+            </a>
+            <a href="#">
+                <img src="./assets/Images/linkedin-line.svg" alt="" class="social_icon">
+            </a>
+            <a href="#">
+                <img src="./assets/Images/twitter-line.svg" alt="" class="social_icon">
+            </a>
+            <a href="#">
+                <img src="./assets/Images/whatsapp-line.svg" alt="" class="social_icon">
+            </a>
+            <a href="#">
+                <img src="./assets/Images/mail-line.svg" alt="" class="social_icon">
+            </a>
+            <div class="line"></div>
+        </div>
 
         <footer>
             <span>Designed &amp; Built by Victor Ibidunmoye</span>
@@ -56,4 +122,5 @@
     </div>
 
 </body>
+
 </html>
