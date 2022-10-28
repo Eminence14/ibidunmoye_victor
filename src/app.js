@@ -35,6 +35,6 @@ const navLinks = document.querySelectorAll('nav ul a')
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        nav.classList.remove('active')
+        openHamburger()
     })
 })

@@ -14,6 +14,7 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
+    color: white;
 }
 
 @font-face {
@@ -37,6 +38,10 @@ body {
     color: var(--cyan);
 }
 
+.cyanic_image {
+    filter: brightness(0) saturate(100%) invert(78%) sepia(59%) saturate(354%) hue-rotate(105deg) brightness(100%) contrast(109%);
+}
+
 header {
     padding: 1.5em;
     display: flex;
@@ -49,6 +54,7 @@ header {
 header.active {
     position: fixed;
     width: 100%;
+    height: 60px;
     background-color: rgba(0,0,0, .2);
     backdrop-filter: blur(4px);
 }
@@ -70,7 +76,6 @@ header.active {
 
 .hamburger img {
     width: 50px;
-    filter: brightness(0) saturate(100%) invert(78%) sepia(59%) saturate(354%) hue-rotate(105deg) brightness(100%) contrast(109%);
 }
 .ham, .close, nav {
     transition: .4s all ease-in-out;
@@ -186,7 +191,6 @@ nav li{
     color: var(--name);
 }
 .nav_img {
-    filter: brightness(0) saturate(100%) invert(78%) sepia(59%) saturate(354%) hue-rotate(105deg) brightness(100%) contrast(109%);
     margin-bottom: 1em;
 }
 .button {
@@ -219,6 +223,7 @@ nav .button {
 }
 nav li:hover {
     cursor: pointer;
+    color: var(--cyan);
 }
 
 /* Social links styling */
@@ -234,7 +239,6 @@ nav li:hover {
     gap: 1em;
 }
 .social_icon {
-    filter: brightness(0) saturate(100%) invert(78%) sepia(59%) saturate(354%) hue-rotate(105deg) brightness(100%) contrast(109%);
     width: 100%;
     max-width: 20px;
 }
@@ -253,13 +257,14 @@ nav li:hover {
 .intro_section.active {
     margin-top: 140px;
 }
-.about_section {
-    margin-top: 50vh;
+.nav_sections {
+    margin-top: 40vh;
 }
 .section_nav_img {
-    filter: brightness(0) saturate(100%) invert(78%) sepia(59%) saturate(354%) hue-rotate(105deg) brightness(100%) contrast(109%);
     width: 100%;
     max-width: 25px;
+    position: relative;
+    z-index: -1;
 }
 .section_heading {
     display: flex;
@@ -275,6 +280,8 @@ nav li:hover {
     width: 40vw;
     height: 1px;
     opacity: .5;
+    position: relative;
+    z-index: -1;
 }
 
 .section_description {
@@ -299,8 +306,11 @@ ul.tech_stack li {
     align-items: center;
 }
 .tech_stack_list_style {
-    filter: brightness(0) saturate(100%) invert(78%) sepia(59%) saturate(354%) hue-rotate(105deg) brightness(100%) contrast(109%);
     width: 100%;
     max-width: 10px;
     margin-right: 1em;
+    position: relative;
+    z-index: -1;
 }
+
+/* my projects section */
