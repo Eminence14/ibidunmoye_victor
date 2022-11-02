@@ -45,7 +45,8 @@ navLinks.forEach(link => {
 const sendMailBtn = document.querySelector('.submit_contact_form')
 sendMailBtn.addEventListener('click', sendMail)
 
-function sendMail() {
+function sendMail(e) {
+    e.preventDefault()
     const params = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
