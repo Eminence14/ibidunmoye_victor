@@ -348,36 +348,6 @@ ul.tech_stack li {
 }
 
 
-
-
-/* Social links styling */
-/* .social_icons {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 .5em 0 0;
-    gap: 1em;
-}
-.social_icon {
-    width: 100%;
-    max-width: 20px;
-}
-.social_icon:hover {
-    filter: brightness(0) saturate(100%) invert(78%) sepia(59%) saturate(444%) hue-rotate(105deg) brightness(120%) contrast(109%);
-    width: 18px;
-}
-.social_icons .line {
-    height: 30vh;
-    width: 1px;
-    border: 1px solid var(--cyan);
-} */
-
-
-
 /* Contact me section */
 
 .contact_me_section .contact_desc {
@@ -456,3 +426,96 @@ footer span {
 .submit_contact_form:hover img {
     filter: brightness(0) saturate(100%) invert(78%) sepia(59%) saturate(354%) hue-rotate(105deg) brightness(100%) contrast(109%);
 }
+
+
+
+
+/* Tablet styles */
+
+
+@media screen and (min-width:768px) {
+    
+    body {
+        font-size: 18px;
+    }
+    header {
+        padding: 1em;
+        align-items: flex-start;
+    }
+    .logo {
+    }
+    .hamburger {
+        display: none;
+    }
+    nav {
+        display: block;
+        position: relative;
+        height: max-content;
+        width: max-content;
+    }
+    nav ul {
+        display: flex;
+        position: relative;
+        height: max-content;
+        padding: 1em;
+    }
+    nav li {
+        flex-direction: row;
+        font-size: .8em;
+    }
+    .nav_img {
+        margin: 0 .3em 0 1.5em;
+        width: 1.1em;
+    }
+    .cyanic.button {
+        margin-left: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: max-content;
+        padding: .55em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Social links styling */
+    .social_icons {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 .5em 0 0;
+        gap: 1em;
+    }
+    .social_icon {
+        width: 100%;
+        max-width: 20px;
+    }
+    .social_icon:hover {
+        filter: brightness(0) saturate(100%) invert(78%) sepia(59%) saturate(444%) hue-rotate(105deg) brightness(120%) contrast(109%);
+        width: 95%;
+    }
+    .social_icons .line {
+        height: 10vh;
+        width: 1px;
+        border: 1px solid var(--role);
+    }
+
+
+
+
+}
+
