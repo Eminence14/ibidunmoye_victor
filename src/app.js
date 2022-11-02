@@ -38,3 +38,27 @@ navLinks.forEach(link => {
         openHamburger()
     })
 })
+
+
+
+// Send email to my account
+const sendMailBtn = document.querySelector('.submit_contact_form')
+sendMailBtn.addEventListener('click', sendMail)
+
+function sendMail() {
+    const params = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+    }
+
+    emailjs.send("service_blq4173", "template_zjr5eyo", params)
+    .then(() => {
+        document.getElementById('name').value = ''
+        document.getElementById('email').value = ''
+        document.getElementById('message').value = ''
+        alert('message sent')
+    }).catch((err) => {
+        console.error(err)
+    });
+}
