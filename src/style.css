@@ -390,6 +390,7 @@ ul.tech_stack li {
 .contact_me_section form {
     width: 90%;
     max-width: 600px;
+    margin: 0 auto;
     background-color: var(--projectBg);
     padding: 1em;
     border-radius: .5em;
