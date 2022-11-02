@@ -374,6 +374,53 @@ ul.tech_stack li {
 } */
 
 
+
+/* Contact me section */
+
+.contact_me_section .contact_desc {
+    margin-top: 1em;
+    color: var(--role);
+    line-height: 1.8em;
+    font-family: Poppins, sans-serif;
+}
+
+.contact_me_section form {
+    width: 90%;
+    max-width: 600px;
+    background-color: var(--projectBg);
+    padding: 1em;
+    border-radius: .5em;
+}
+
+
+.contact_me_section form div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    border-radius: 3px;
+}
+.contact_me_section form div label {
+    color: var(--nav);
+    margin-right: 3em;
+    font-family: Poppins, sans-serif;
+}
+.contact_me_section form div input, .contact_me_section form div textarea {
+    outline: none;
+    background-color: var(--mainBg);
+    padding: .5em;
+    font-size: .85em;
+    border: 1px solid rgba(0,0,0, .05);
+    width: 90%;
+    color: var(--nav);
+    font-family: Mono, monospace;
+}
+.contact_me_section form div input::placeholder {
+    font-family: Poppins, sans-serif;
+    font-size: .8em;
+    color: var(--role);
+}
+
 /* footer */ 
 
 footer span {
