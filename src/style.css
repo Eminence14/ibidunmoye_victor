@@ -589,3 +589,16 @@ footer span {
         border: 1px solid var(--role);
     }
 }
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 22px;
+    }
+    .container {
+        width: 100%;
+        max-width: 1440px;
+    }
+    .intro_section {
+        font-size: 1.2em;
+    }
+}
