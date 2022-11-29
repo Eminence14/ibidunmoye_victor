@@ -599,4 +599,7 @@ footer span {
     .intro_section {
         font-size: 1.1em;
     }
+    .intro_section p.description {
+        line-height: 2em;
+    }
 }
