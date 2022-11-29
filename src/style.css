@@ -591,14 +591,12 @@ footer span {
 }
 
 @media screen and (min-width: 1024px) {
-    body {
-        font-size: 22px;
-    }
     .container {
         width: 100%;
         max-width: 1440px;
+        margin: 0 auto;
     }
     .intro_section {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 }
